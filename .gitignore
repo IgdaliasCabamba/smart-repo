@@ -1,0 +1,7 @@
+tests/local/
+build/
+senv/
+**/__pycache__
+*.pyc
+*.pyi
+*.idt
