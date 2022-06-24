@@ -1,6 +1,7 @@
 tests/local/
 build/
 senv/
+data_set/
 **/__pycache__
 *.pyc
 *.pyi
