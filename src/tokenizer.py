@@ -18,15 +18,15 @@ def get_clean_text(raw_text) -> str:
         no_currency_symbols=True,      # replace all currency symbols with a special token
         no_punct=True,                 # remove punctuations
         replace_with_punct="",          # instead of removing punctuations you may replace them
-        replace_with_url="",
-        replace_with_email="",
-        replace_with_phone_number="",
-        replace_with_number="",
-        replace_with_digit="",
+        replace_with_url=" ",
+        replace_with_email=" ",
+        replace_with_phone_number=" ",
+        replace_with_number=" ",
+        replace_with_digit=" ",
         replace_with_currency_symbol="",
         lang="en"                       # set to 'de' for German special handling
     )
-    clean_text = re.sub(r'[^a-z-\s]', '', clean_text)
+    clean_text = re.sub(r'[^_a-z-\s]', '', clean_text)
     return clean_text
 
 def normalize(path:str, files_regex:str="*.json", recursive:bool=False) -> list:

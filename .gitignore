@@ -2,7 +2,9 @@ tests/local/
 build/
 senv/
 data_set/
+models/
 **/__pycache__
 *.pyc
 *.pyi
 *.idt
+*.db
